@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "Roboto-regular";
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+*{
+    font-family: "Roboto-regular";
+    scroll-behavior: smooth;
+}
+:root{
+    --first-color:#0d6efd;
+    --second-color:#dc3545;
+    --third-color:#ffffff;
+    --fourth-color: #fd7e14;
+}
+/* Custom Utilities  */
+
+body{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    overflow-x: hidden;
+}
+.main-heading{
+    font-size: 3rem;
+    color: var(--third-color);
+    text-align: center;
+}
+.sub-heading{
+    font-size: 1rem;
+    color: var(--fourth-color);
+    text-align: center;
+    
+}
+.heading-line{
+    width: 100px;
+    height: 2px;
+    background-color: var(--fourth-color);
+    margin: 30px auto;
+}
+/* Custom CSS  */
+
+/* Navigation  */
+nav{
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+}
+
+
+/* header section  */
+#header{
+    min-height: 650px;
+    width: 100%;
+    position: relative;
+}
+
+
+#header video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+#header .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background: linear-gradient(to left,var(--first-color),var(--second-color));
+    mix-blend-mode: overlay;
+    z-index: -1;
+}
+#header .header-text{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+/* Service  */
+.service-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.service-card img:hover{
+    transform: scale(1.05);
+}
+
+/* Plan  */
+.plan-2-card{
+    position: relative;
+    overflow: hidden;
+}
+.recommeded{
+    width: 150px;
+    background-color: var(--third-color);
+    color: black;
+    font-size: 0.9rem;
+    position: absolute;
+    top:18px;
+    right: -25px;
+    transform: rotate(30deg);
+}
+
+/* Testimonial  */
+#testimonial img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    left: -8%;
+}
+.carousel-control-prev-icon{
+    width: 30px;
+    height: 30px;
+    background-color: var(--fourth-color);
+}
+.carousel-control-next{
+    position: absolute;
+    right: -8%;
+}
+.carousel-control-next-icon{
+    width: 30px;
+    height: 30px;
+    background-color: var(--fourth-color);
+}
+
+.carousel-indicators button[type=button]{
+    height: 15px;
+}
+
+/* News Section  */
+#news img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--second-color);
+    transition: 0.5s;
+}
+#news img:hover{
+    transform: scale(1.03);
+
+}
+
+/* FAQ Section  */
+.accordion-button:not(.collapsed){
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+}
+
+/* Contact Section  */
+#contact {
+    width: 100%;
+    height: 450px;
+    background-image: url('../../images/contactImage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.7;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Up Arrow Section  */
+.up-arrow{
+    display: block;
+    background-color: var(--second-color);
+    color: var(--third-color);
+    width: 40px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    border-radius: 4px;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+
+}
+.up-arrow:hover{
+    color: var(--fourth-color);
+}
